@@ -1,4 +1,4 @@
-import { ProductResolverService } from './product-resover.service';
+import { ProductResolverService } from './product-resolver.service';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';

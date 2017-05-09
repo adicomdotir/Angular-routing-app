@@ -8,7 +8,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductService } from './product.service';
 import { ProductFilterPipe } from './product-filter.pipe';
-import { ProductResoverService } from './product-resover.service';
+import { ProductResolverService } from './product-resolver.service';
 
 @NgModule({
   imports: [
@@ -17,6 +17,6 @@ import { ProductResoverService } from './product-resover.service';
     ProductRoutingModule
   ],
   declarations: [ProductListComponent, ProductDetailComponent, ProductEditComponent, ProductFilterPipe],
-  providers: [ProductService, ProductResoverService]
+  providers: [ProductService, ProductResolverService]
 })
 export class ProductModule { }
