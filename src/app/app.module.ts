@@ -1,3 +1,5 @@
+import { UserModule } from './user/user.module';
+import { ProductModule } from './product/product.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +20,11 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+
+    UserModule,
+    ProductModule,
+
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
