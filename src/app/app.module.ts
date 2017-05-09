@@ -1,3 +1,5 @@
+import { ProductData } from './product/product-data';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { UserModule } from './user/user.module';
 import { ProductModule } from './product/product.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,6 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(ProductData, { delay: 1000 }),
 
     ProductModule,
     UserModule,
