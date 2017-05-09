@@ -11,12 +11,14 @@ import { ActivatedRoute } from '@angular/router'
 export class ProductListComponent implements OnInit {
   pageTitle = "Product List";
   errorMessage: string;
+  listFilter: string;
 
   products: IProduct[];
 
   constructor(private productService: ProductService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.listFilter = this.route.snapshot.queryParams['filterBy'] || '';
     this.productService.getProducts()
       .subscribe(products => this.products = products,
         error => this.errorMessage = <any>error);
