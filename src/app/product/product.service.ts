@@ -84,7 +84,9 @@ export class ProductService {
     return {
       id: 0,
       productName: null,
-      productCode: null
+      productCode: null,
+      category: null,
+      tags: []
     };
   }
 
